@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Li Tongtong">
+
+    <title>China and Taiwan on social media</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Data Scraping Practice</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="https://github.com/geniuslee/data-scraping/blob/gh-pages/social%20assignment%201.R">R code source</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="masthead">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h1 class="brand-heading">China VS Taiwan</h1>
+              <p class="intro-text">Using R to analyze how China and Taiwan are mentioned
+                <br>on Twitter, The Now York Times and Facebook</p>
+              <a href="#about" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>About China and Taiwan</h2>
+            <p>The relationship between China and Taiwan is an <span class="emphasis"><strong>eternal and complicated</strong></span> topic. </p>
+            <p>For us Chinese, we always strongly believe that Taiwan <span class="emphasis"><strong>being a part of China</strong></span> is an irrefutable fact. But in the world-wide range, it is <span class="emphasis"><strong>totally</strong></span> not that case. Many countries are confused about their relationship, and some even deliberately use the conflict between the two regions to <span class="emphasis"><strong>restrict China’s further development.</strong></span> </p>
+            <p>So, I want to know more about how the international community talk about or comment on China and Taiwan. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section content-section text-center">
+      <div class="container">
+        <div class="col-lg-8 mx-auto">
+          <h2>Twitter Wordcloud</h2>
+          <p>Firstly, I made a wordcloud for “China” and “Taiwan”, seeing the words that appear with them <span class="emphasis"><strong>most frequently</strong></span> on Twitter. I respectively selected  <span class="emphasis"><strong>the latest 1000 tweets</strong></span> that mentioned “China” and “Taiwan” and analyzed the whole text through R Studio.</p>
+          <img class="photo" src="img/wordcloud.jpg">
+          <p>It is shown that for “Taiwan”, words with the highest frequency are all related to <span class="emphasis"><strong>the earthquake</strong></span>, like Hualien, Taiwan earthquake, pray for Taiwan, rescue, survivors and so on. We can see that the earthquake is what the international community concern most about Taiwan in recent days. </p>
+          <p>For China, it is interesting to see the word “ecommerce” and “internet business”. We all know that China’s ecommerce is at the <span class="emphasis"><strong>world’s leading position.</strong></span> The two biggest online shopping markets Taobao and JD provide people with multiple commodity choices and efficient delivery service. And those leading Internet companies Alibaba, Tencent, Baidu are now performing increasingly better on the worlds stage.</p>
+          <p>The appearance of “hongkong”, I guess is due to the recent BU student protesting Mandarin test event. And in political aspect, China is also mentioned together with India, North Korea, Japan, USA and Russia.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <div id="contact" class="content-section text-center">
+      <h2>NYT and Facebook</h2>
+      <div class="visual">
+      <img class="chart" src="img/line chart.png">
+      </div>
+      <div class="narration">
+      <p>I also figure out the frequency of the two key words on NYT during the time period of 1987 to 2017. With the regard of China, there is a dramatic growth between 2004 and 2008. Personally I think the reason may be 2008 Beijing Olympic Games. After the Athens Olympic Games, the world started to focus on and look forward to China’s performance. The 2008 Olympic Games strongly increased China’s sense of presence in the international community and boosted its tourism economy.</p>
+      <p>There is a small rise for Taiwan in 2016. Maybe it is because of the Taiwan Election. Overall, China was mentioned much more than Taiwan on the New York Times.</p>
+      </div>
+    </div>
+    <div class="divide"></div>
+
+    <div id="FB" class="content-section text-center">
+      <div class="visual">
+      <img class="chart" src="img/bar chart.png">
+      </div>
+      <div class="narration">
+     <p>For Facebook, I try to analyze the occurrence of “China” and “Taiwan” on four mainstream media’s Facebook pages, saying CNN, BBC, POLITICO, ABC. Because I met the situation that some media didn’t mention “China” or “Taiwan” in its latest 100 posts, I created a function to select their latest 500 posts. </p>
+     <p>It can be seen that China was mentioned more than Taiwan by BBC and POLITICO. For CNN, both of the words were mentioned 3 times. And ABC mentioned Taiwan more than China.</p>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>Copyright &copy; Li Tongtong</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+
+  </body>
+
+</html>
